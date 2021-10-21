@@ -55,7 +55,7 @@ if (count($_POST) == 0 ){
             echo $codigosErrorSubida[ERROR_MAX_TAMAÑOIMG];
             $error=true;
         } else if ((file_exists($directorioSubida.$nombre_imagen))){
-            echo "Ya existe";
+            echo "El nombre de ese fichero ya existe en el directorio";
             $error=true;
         }
 
